@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>チーム参加応募フォーム</title>
+<style>
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>チーム参加応募フォーム</h1>
+<form>
+<label>お名前</label>
+<input type="text" name="name" placeholder="お名前を入力してください" required>
+<label>プレイ時間のスクリーンショット</label>
+<input type="file" accept="image/*" required>
+<label>チームリーダー</label>
+<select name="leader" required>
+<option value="">選択してください</option>
+<option>可能</option>
+<option>不可</option>
+</select>
+<label>チーム希望</label>
+<input type="text" name="team" placeholder="希望するチーム・メンバーなど">
+<button type="submit">応募する</button>
+</form>
+</div>
+</body>
+</html>
